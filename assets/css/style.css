@@ -63,3 +63,13 @@ form button:hover {
 .tabela {
   width: 100%;
 }
+
+.paragrafo-resultado {
+  background: lime;
+  padding: 10px 20px;
+}
+
+.badResult {
+  background: red;
+  padding: 10px 20px;
+}
