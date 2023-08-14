@@ -1,11 +1,3 @@
-function calculo () {
-    onclick(calcularIMC)
-}
-
-document.getElementById('calculo').addEventListener("click", function() {
-    calcularIMC();
-  });
-
 function calcularIMC() {
     const peso = parseFloat(document.getElementById(peso).value);
     const altura = parseFloat(document.getElementById(altura).value);
@@ -25,3 +17,5 @@ function calcularIMC() {
     return imc.toFixed(2);
   }
   
+  const btConsultar = document.getElementById('btConsultar')
+  btConsultar.addEventListener("click",calcularIMC)
