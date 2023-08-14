@@ -1,4 +1,4 @@
-function calcularIMC() {
+  function calcularIMC() {
     const peso = parseFloat(document.getElementById(peso).value);
     const altura = parseFloat(document.getElementById(altura).value);
   
@@ -16,6 +16,14 @@ function calcularIMC() {
     const imc = peso / (altura * altura);
     return imc.toFixed(2);
   }
-  
-  const btConsultar = document.getElementById('btConsultar')
+  /*function calcularIMC () {
+    const peso = document.getElementById('peso');
+    const altura = document.getElementById(altura);
+    const resultado = document.getElementById('resultado');
+    let altura = altura / 100;
+    const imc = peso / (altura*altura);
+  }*/
+
+
+  const btConsultar = document.getElementById('submit')
   btConsultar.addEventListener("click",calcularIMC)

@@ -12,7 +12,7 @@
 <body>
 
   <section class="container">
-    <h1>Tabela de Pesos</h1>
+    <h1>Calcule seu IMC</h1>
     <table class="tabela">
       <tr>
         <th style="text-align: start;">IMC</th>
@@ -44,15 +44,12 @@
       </tr>
     </table>
     <h1>Calcule seu IMC</h1>
-    <form action="get">
-      <p>Peso:</p>
-      <input type="text" name="" id="peso">
-      <p>Altura:</p>
-      <input type="text" id="altura">
-
-      <p id="resultado"></p>
-
-      <p><input type="button" value="consultar" id="btConsultar"></p>
+    <form action="/" id="form" method="post">
+      <label for="peso">Peso</label>
+      <input type="text" name="peso" id="peso">
+      <label for="altura">altura</label>
+      <input type="text" name="peso" id="altura">
+      <button type="submit">Calcular</button>
     </form>
   </section>
 
